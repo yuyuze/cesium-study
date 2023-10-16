@@ -9,7 +9,7 @@ import {
   Rectangle,
 } from 'cesium';
 import { useSysStore } from './store/sys';
-import Shape from './components/Shape/index.vue';
+import Tile from './components/Tile/index.vue';
 const containerRef = ref();
 const isLoad = ref(false);
 const sysStore = useSysStore();
@@ -45,7 +45,7 @@ onMounted(() => {
       height: '100vh',
     }"
   ></div>
-  <Shape v-if="isLoad"></Shape>
+  <Tile v-if="isLoad"></Tile>
 </template>
 
 <style scoped>
